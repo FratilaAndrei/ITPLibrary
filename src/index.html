@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITP Library</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6e70eb99cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="h-14 flex container items-center bg-white-color m-auto text-important-black-color"
+    >
+      <ul class="flex justify-between items-center w-full">
+        <li>
+          <div class="text-xl font-medium font-lora">ITP Library</div>
+        </li>
+        <ul class="flex gap-x-10 uppercase font-medium font-roboto">
+          <li>
+            <a href="index.html" class="flex items-center gap-2 text-[12px]">
+              <i class="fa-solid fa-house"></i>
+              <div>Home</div>
+            </a>
+          </li>
+          <li>
+            <a href="cart.html" class="flex items-center gap-2 text-[12px]">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div>Shopping Cart</div>
+            </a>
+          </li>
+          <li>
+            <a href="orders.html" class="flex items-center gap-2 text-[12px]">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div>Orders</div>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" class="flex items-center gap-2 text-[12px]">
+              <i class="fa-solid fa-user"></i>
+              <div>Login</div>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+
+    <div class="relative">
+      <aside
+        class="h-[600px] bg-carrousel-color flex items-center px-24 w-full"
+      >
+        <div class="w-2/5 space-y-6">
+          <div
+            class="font-bold text-[46px] text-wrap w-96 font-lora text-important-black-color"
+          >
+            Buy textbooks for the best price
+          </div>
+          <div class="text-normal-black-color font-roboto font-normal">
+            From applied literature to educational resources, we have lot of
+            textbooks to offer you. We sell only the best books.
+          </div>
+        </div>
+        <div class="w-3/5 flex justify-center">sal</div>
+      </aside>
+
+      <section
+        class="h-fit px-8 bg-white-color container absolute right-1/2 bottom-24 translate-y-full translate-x-1/2"
+      >
+        <div class="text-normal-black-color py-8">Best Books of the month</div>
+        <div
+          class="flex flex-wrap w-[16%] justify-between h-96 gap-y-2 flex-col"
+        >
+          <div class="h-[90%] flex flex-col gap-y-4">
+            <div class="h-4/5">
+              <img
+                src="./images/mainPage.png"
+                alt="book-1"
+                class="h-full w-full"
+              />
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="">
+                <div class="font-lora font-semibold text-important-black-color">
+                  Hero with Gold
+                </div>
+                <div class="font-roboto font-normal text-normal-black-color">
+                  Dougie Rogers
+                </div>
+              </div>
+              <div class="price text-beige-color">$90</div>
+            </div>
+          </div>
+          <button
+            class="bg-black flex justify-center items-center gap-x-2 text-white text-xs py-1.5 w-full rounded-md"
+          >
+            <i class="fa fa-cart-shopping"></i>
+            <div>Add to Cart</div>
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
