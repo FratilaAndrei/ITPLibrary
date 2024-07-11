@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITP Library</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6e70eb99cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav
+      class="h-14 flex container items-center bg-white-color m-auto text-important-black-color"
+    >
+      <ul class="flex justify-between items-center w-full">
+        <li class="text-xl font-medium font-lora">ITP Library</li>
+        <ul class="flex gap-x-10 uppercase font-medium font-roboto">
+          <li>
+            <a href="index.html" class="flex items-center gap-2 text-[12px]">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="cart.html" class="flex items-center gap-2 text-[12px]">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>Shopping Cart</span>
+            </a>
+          </li>
+          <li>
+            <a href="orders.html" class="flex items-center gap-2 text-[12px]">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" class="flex items-center gap-2 text-[12px]">
+              <i class="fa-solid fa-user"></i>
+              <span>Login</span>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+
+    <section class="full-page my-5 container mx-auto p-20">
+      <div class="flex flex-col h-full justify-between">
+        <div class="text-2xl font-lora font-bold from-important-black-color">
+          Your Products
+        </div>
+        <div class="w-full flex flex-wrap gap-y-6">
+          <div class="w-full flex justify-between border-b-2 pb-6">
+            <div class="flex gap-x-8">
+              <div class="w-20 h-28">
+                <img
+                  src="./images/mainPage.png"
+                  alt="image-order"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col">
+                <div
+                  class="font-lora font-semibold text-2xl text-important-black-color"
+                >
+                  Hero with Gold
+                </div>
+                <div class="flex gap-x-2 items-center">
+                  <span class="text-normal-black-color font-roboto text-sm"
+                    >by</span
+                  >
+                  <span
+                    class="text-important-black-color font-bold font-lora text-lg"
+                    >Dougie Rogers</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-end">
+              <div class="text-beige-color font-roboto font-bold text-xl">
+                $90
+              </div>
+              <div class="flex gap-x-2 items-center text-sm">
+                <i class="fa-regular fa-trash-can"></i>
+                <span>Remove</span>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-between border-b-2 pb-6">
+            <div class="flex gap-x-8">
+              <div class="w-20 h-28">
+                <img
+                  src="./images/mainPage.png"
+                  alt="image-order"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col">
+                <div
+                  class="font-lora font-semibold text-2xl text-important-black-color"
+                >
+                  Hero with Gold
+                </div>
+                <div class="flex gap-x-2 items-center">
+                  <span class="text-normal-black-color font-roboto text-sm"
+                    >by</span
+                  >
+                  <span
+                    class="text-important-black-color font-bold font-lora text-lg"
+                    >Dougie Rogers</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-end">
+              <div class="text-beige-color font-roboto font-bold text-xl">
+                $90
+              </div>
+              <div class="flex gap-x-2 items-center text-sm">
+                <i class="fa-regular fa-trash-can"></i>
+                <span>Remove</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <div class="flex flex-col gap-y-4">
+            <div
+              class="font-semibold font-lora text-xl text-important-black-color"
+            >
+              Total:
+            </div>
+            <a href="index.html">
+              <button
+                class="border-2 py-1.5 px-10 text-center rounded-md text-xs"
+              >
+                Continue Shopping
+              </button>
+            </a>
+          </div>
+          <div class="flex flex-col items-end gap-y-4">
+            <div class="text-beige-color font-roboto font-bold text-xl">
+              $90
+            </div>
+            <a href="orderDetails.html">
+              <button
+                class="text-center bg-black border-2 border-black rounded-md text-xs text-white px-10 py-1.5"
+              >
+                Place Order
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="h-14 bg-footer-color text-xs">
+      <div class="container m-auto flex items-center justify-between h-full">
+        <div class="flex gap-x-2 items-center">
+          <div>@Copyright</div>
+          <div class="text-normal-black-color font-roboto font-bold underline">
+            IT Perspectives
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
