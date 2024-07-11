@@ -65,86 +65,162 @@
       </ul>
     </nav>
 
-    <section class="full-page my-5 container mx-auto p-20">
-      <div class="flex flex-col h-full justify-between">
-        <div class="text-2xl font-lora font-bold from-important-black-color">
-          Your Products
+    <section class="my-5 container mx-auto p-20 flex">
+      <div class="w-full relative">
+        <img
+          src="../images/mainPage.png"
+          alt="image-order"
+          class="h-2/3 w-2/3 pt-20 object-cover z-20 relative"
+        />
+        <div class="bg-carrousel-color w-4/5 h-3/5 absolute top-40 z-10"></div>
+      </div>
+      <div
+        class="w-full border border-gray-200 rounded-sm p-4 flex flex-col gap-y-8"
+      >
+        <div
+          class="text-2xl text-important-black-color font-semibold font-lora"
+        >
+          Order Details
         </div>
-        <div class="w-full flex flex-wrap gap-y-6">
-          <div class="w-full flex justify-between border-b-2 pb-6">
-            <div class="flex gap-x-8">
-              <div class="w-20 h-28">
-                <img
-                  src="../images/mainPage.png"
-                  alt="image-order"
-                  class="w-full h-full"
-                />
-              </div>
-              <div class="flex flex-col">
-                <div
-                  class="font-lora font-semibold text-2xl text-important-black-color"
-                >
-                  Order #78234
-                </div>
-                <div class="flex gap-x-2 items-center">
-                  <span class="text-normal-black-color font-roboto text-lg"
-                    >Items:</span
-                  >
-                  <span
-                    class="text-important-black-color font-bold font-lora text-lg"
-                    >2</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col items-end">
-              <div class="text-beige-color font-roboto font-bold text-xl">
-                $90
-              </div>
-              <div class="flex gap-x-2 items-center text-sm">
-                <i class="fa-regular fa-trash-can"></i>
-                <span>Remove</span>
+        <div class="flex flex-col gap-y-2">
+          <div class="text-xs font-roboto font-semibold">Contact Details</div>
+          <div class="w-full flex flex-wrap gap-x-4 text-sm">
+            <input
+              type="text"
+              placeholder="First Name"
+              required
+              class="py-1 pl-2 border-gray-200 border-2 outline-none w-[48%]"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              required
+              class="py-1 pl-2 border-gray-200 border-2 outline-none w-[48%]"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <div class="text-xs font-roboto font-semibold">Billing Details</div>
+          <div class="w-full flex flex-col gap-y-4 text-sm">
+            <select
+              name="Countries Selection"
+              id=""
+              class="outline-none border-2 border-gray-200 py-1 font-roboto text-normal-black-color"
+            >
+              <option value="" selected disabled>Select a country</option>
+              <option value="RO">Romania</option>
+              <option value="RU">Russia</option>
+              <option value="UA">Ukraine</option>
+            </select>
+
+            <input
+              type="text"
+              placeholder="Adress"
+              required
+              class="py-1 pl-2 border-gray-200 border-2 outline-none w-full"
+            />
+            <input
+              type="number"
+              placeholder="Phone Number"
+              required
+              required
+              class="py-1 pl-2 border-gray-200 border-2 outline-none w-full"
+            />
+            <div class="flex gap-x-2 items-center">
+              <input type="checkbox" />
+              <div
+                class="text-xs font-roboto font-normal text-normal-black-color"
+              >
+                Use address for delivery
               </div>
             </div>
           </div>
-          <div class="w-full flex justify-between border-b-2 pb-6">
-            <div class="flex gap-x-8">
-              <div class="w-20 h-28">
-                <img
-                  src="../images/mainPage.png"
-                  alt="image-order"
-                  class="w-full h-full"
-                />
-              </div>
-              <div class="flex flex-col">
-                <div
-                  class="font-lora font-semibold text-2xl text-important-black-color"
-                >
-                  Hero with Gold
-                </div>
-                <div class="flex gap-x-2 items-center">
-                  <span class="text-normal-black-color font-roboto text-sm"
-                    >by</span
-                  >
-                  <span
-                    class="text-important-black-color font-bold font-lora text-lg"
-                    >Dougie Rogers</span
-                  >
-                </div>
-              </div>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <div class="text-xs font-roboto font-semibold">Adress Details</div>
+          <div class="w-full flex flex-col gap-y-4 text-sm">
+            <select
+              name="Countries Selection"
+              id=""
+              class="outline-none border-2 border-gray-200 py-1 font-roboto text-normal-black-color"
+            >
+              <option value="" selected disabled>Select a country</option>
+              <option value="RO">Romania</option>
+              <option value="RU">Russia</option>
+              <option value="UA">Ukraine</option>
+            </select>
+
+            <input
+              type="text"
+              placeholder="Adress"
+              required
+              class="py-1 pl-2 border-gray-200 border-2 outline-none w-full"
+            />
+            <input
+              type="number"
+              placeholder="Phone Number"
+              required
+              required
+              class="py-1 pl-2 border-gray-200 border-2 outline-none w-full"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <div class="font-lora font-bold text-important-black-color text-xs">
+            Payment Type
+          </div>
+          <div class="flex gap-x-4 text-xs">
+            <div class="flex gap-x-2">
+              <input type="radio" name="paymentType" id="Online" checked />
+              <label for="Online">Online</label>
             </div>
-            <div class="flex flex-col items-end">
-              <div class="text-beige-color font-roboto font-bold text-xl">
-                $90
-              </div>
-              <a href="" class="flex gap-x-2 items-center text-sm">
-                <i class="fa-regular fa-trash-can"></i>
-                <span>Edit Order Details</span>
-              </a>
+            <div class="flex gap-x-2">
+              <input type="radio" name="paymentType" id="Cash" />
+              <label for="Cash">Cash</label>
             </div>
           </div>
         </div>
-        <div class="third-item-flex"></div>
+        <div class="flex flex-col gap-y-2">
+          <div class="text-xs font-roboto font-semibold">Delivery Date</div>
+          <div class="w-full flex flex-col gap-y-4 text-sm">
+            <input
+              type="date"
+              class="w-full py-1 pl-2 border-gray-200 border-2 outline-none"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <div class="text-xs font-roboto font-semibold">Observations</div>
+          <div class="w-full flex flex-col gap-y-4 text-sm">
+            <textarea
+              placeholder="Observations"
+              class="border-2 border-gray-200 p-2"
+            ></textarea>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <div class="text-xs font-roboto font-semibold">
+            Would you recommand us?
+          </div>
+          <div class="w-full flex gap-x-2 items-center text-sm">
+            <input type="checkbox" id="recommandation-check" />
+            <label for="recommandation-check">Would you recommand us?</label>
+          </div>
+        </div>
+        <div class="flex w-full justify-between">
+          <a
+            href="orderList.html"
+            class="py-1 border-2 rounded-md border-gray-200 w-1/3 text-sm cursor-pointer text-center"
+          >
+            <button>Cancel</button>
+          </a>
+          <a
+            href=""
+            class="py-1 bg-black text-white rounded-md w-1/3 text-sm cursor-pointer text-center"
+          >
+            <button>Update Order</button>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -156,6 +232,11 @@
             IT Perspectives
           </div>
         </div>
+        <a href="#">
+          <button class="p-1 px-1.5 rounded-sm bg-black">
+            <i class="fa-solid fa-chevron-up text-white"></i>
+          </button>
+        </a>
       </div>
     </footer>
   </body>
