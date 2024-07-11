@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ITP Library</title>
-    <link href="./output.css" rel="stylesheet" />
+    <link href="../output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,14 +29,14 @@
         <li class="text-xl font-medium font-lora">ITP Library</li>
         <ul class="flex gap-x-10 uppercase font-medium font-roboto">
           <li>
-            <a href="index.html" class="flex items-center gap-2 text-[12px]">
+            <a href="../index.html" class="flex items-center gap-2 text-[12px]">
               <i class="fa-solid fa-house"></i>
               <span>Home</span>
             </a>
           </li>
           <li>
             <a
-              href="shoppingCart.html"
+              href="../shoppingCart.html"
               class="flex items-center gap-2 text-[12px]"
             >
               <i class="fa-solid fa-cart-shopping"></i>
@@ -44,13 +44,19 @@
             </a>
           </li>
           <li>
-            <a href="orders.html" class="flex items-center gap-2 text-[12px]">
+            <a
+              href="orderList.html"
+              class="flex items-center gap-2 text-[12px]"
+            >
               <i class="fa-solid fa-truck-fast"></i>
               <span>Orders</span>
             </a>
           </li>
           <li>
-            <a href="login.html" class="flex items-center gap-2 text-[12px]">
+            <a
+              href="../Login/login.html"
+              class="flex items-center gap-2 text-[12px]"
+            >
               <i class="fa-solid fa-user"></i>
               <span>Login</span>
             </a>
@@ -59,7 +65,115 @@
       </ul>
     </nav>
 
-    <footer class="h-14 mt-10 bg-footer-color text-xs">
+    <section class="full-page my-5 container mx-auto p-20">
+      <div class="flex flex-col h-full gap-y-8">
+        <div
+          class="text-3xl font-lora font-semibold from-important-black-color"
+        >
+          Your Products
+        </div>
+        <div class="w-full flex flex-wrap gap-y-6">
+          <div class="w-full flex justify-between border-b-2 pb-6">
+            <div class="flex gap-x-8">
+              <div
+                class="w-20 h-24 bg-carrousel-color roounded-md flex justify-center items-center"
+              >
+                <i class="fa-solid fa-book text-3xl"></i>
+              </div>
+              <div class="flex flex-col gap-y-4">
+                <div class="">
+                  <div
+                    class="font-lora font-semibold text-2xl text-important-black-color"
+                  >
+                    Order #78234
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <span class="text-normal-black-color font-roboto text-lg"
+                      >Items:</span
+                    >
+                    <span
+                      class="text-important-black-color font-bold font-lora text-lg"
+                      >2</span
+                    >
+                  </div>
+                </div>
+                <div class="flex gap-x-2 items-center text-sm">
+                  <span class="font-roboto font-normal text-normal-black-color"
+                    >Deivery Status:</span
+                  >
+                  <span
+                    class="font-lora font-semibold text-important-black-color"
+                    >In Progress</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-end">
+              <div class="text-beige-color font-roboto font-bold text-xl">
+                $90
+              </div>
+              <a
+                href="./orderDetails.html"
+                class="flex gap-x-2 items-center text-sm"
+              >
+                <i class="fa-solid fa-pencil"></i>
+                <span>Edit Order Details</span>
+              </a>
+            </div>
+          </div>
+          <div class="w-full flex justify-between border-b-2 pb-6">
+            <div class="flex gap-x-8">
+              <div
+                class="w-20 h-24 bg-carrousel-color roounded-md flex justify-center items-center"
+              >
+                <i class="fa-solid fa-book text-3xl"></i>
+              </div>
+              <div class="flex flex-col gap-y-4">
+                <div class="">
+                  <div
+                    class="font-lora font-semibold text-2xl text-important-black-color"
+                  >
+                    Order #78233
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <span class="text-normal-black-color font-roboto text-lg"
+                      >Items:</span
+                    >
+                    <span
+                      class="text-important-black-color font-bold font-lora text-lg"
+                      >2</span
+                    >
+                  </div>
+                </div>
+                <div class="flex gap-x-2 items-center text-sm">
+                  <span class="font-roboto font-normal text-normal-black-color"
+                    >Deivery Status:</span
+                  >
+                  <span
+                    class="font-lora font-semibold text-important-black-color"
+                    >Completed</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-end">
+              <div class="text-beige-color font-roboto font-bold text-xl">
+                $90
+              </div>
+              <a
+                hre="./orderDetails.html"
+                class="flex gap-x-2 items-center text-sm"
+              >
+                <i class="fa-solid fa-pencil"></i>
+                <span>Edit Order Details</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="h-14 bg-footer-color text-xs">
       <div class="container m-auto flex items-center justify-between h-full">
         <div class="flex gap-x-2 items-center">
           <div>@Copyright</div>
@@ -67,11 +181,6 @@
             IT Perspectives
           </div>
         </div>
-        <button class="p-1 px-1.5 rounded-sm bg-black">
-          <a href="#">
-            <i class="fa-solid fa-chevron-up text-white"></i>
-          </a>
-        </button>
       </div>
     </footer>
   </body>
