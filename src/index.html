@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ITP Library</title>
     <link href="./output.css" rel="stylesheet" />
+    <link href="./input.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,9 +23,7 @@
   </head>
 
   <body>
-    <nav
-      class="h-14 flex container items-center bg-white-color m-auto text-important-black-color"
-    >
+    <nav class="navbar bg-white-color m-auto text-important-black-color">
       <ul class="flex justify-between items-center w-full">
         <ul class="text-xl font-medium font-lora flex gap-x-2 items-center">
           <img src="images/logo.png" alt="logo" class="" />
@@ -70,11 +69,11 @@
 
     <div class="relative">
       <aside
-        class="h-[600px] bg-carrousel-color flex items-center px-24 w-full"
+        class="h-[600px] bg-carrousel-color flex items-center justify-between flex-wrap w-full px-24"
       >
-        <div class="w-2/5 space-y-6">
+        <div class="space-y-6 w-1/2">
           <div
-            class="font-bold text-[46px] text-wrap w-96 font-lora text-important-black-color"
+            class="font-bold font-lora text-important-black-color carrousel-description text-wrap w-2/3"
           >
             Buy textbooks for the best price
           </div>
@@ -83,7 +82,7 @@
             textbooks to offer you. We sell only the best books.
           </div>
         </div>
-        <div class="w-3/5 flex justify-center items-center h-full">
+        <div class="flex justify-center items-center h-full w-1/2">
           <img
             src="./images/carrousel1.png"
             alt="carrousel-first-pic"
@@ -94,10 +93,12 @@
 
       <div class="container mx-auto -mt-20">
         <section class="h-fit px-8 bg-white-color flex flex-col gap-y-6">
-          <div class="">
+          <div class="w-full">
             <div class="py-8">Best Books of the month</div>
-            <div class="flex flex-wrap gap-x-8">
-              <div class="flex flex-col w-[15%]">
+            <div
+              class="flex overflow-x-scroll max-w-full gap-x-8 h-[450px] p-6 -mx-6"
+            >
+              <div class="flex flex-col flex-shrink-0">
                 <a href="viewBook.html" class="flex flex-col h-full w-full">
                   <img
                     src="./images/the-idiot.jpg"
@@ -131,7 +132,7 @@
                   <div>Add to Cart</div>
                 </button>
               </div>
-              <div class="flex flex-col w-[15%]">
+              <div class="flex flex-col flex-shrink-0">
                 <a href="viewBook.html" class="flex flex-col h-full w-full">
                   <img
                     src="./images/the-book-of-disquiet.jpg"
@@ -165,7 +166,109 @@
                   <div>Add to Cart</div>
                 </button>
               </div>
-              <div class="flex flex-col w-[15%]">
+              <div class="flex flex-col flex-shrink-0">
+                <a href="viewBook.html" class="flex flex-col h-full w-full">
+                  <img
+                    src="./images/the-idiot.jpg"
+                    alt=""
+                    class="h-[70%] w-full"
+                  />
+                  <div class="h-[30%] flex flex-col pt-4 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="w-3/4">
+                        <div
+                          class="text-important-black-color font-lora font-bold text-md line-clamp-2 text-wrap"
+                        >
+                          Thieves of the lost world god
+                        </div>
+                        <div
+                          class="text-normal-black-color font-lora font-normal text-xs"
+                        >
+                          Dougie Rogers
+                        </div>
+                      </div>
+                      <div class="text-beige-color font-roboto font-bold">
+                        $90
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  class="flex justify-center gap-x-2 w-full text-xs bg-black text-white-color items-center py-1.5 rounded-sm"
+                >
+                  <i class="fa fa-cart-shopping"></i>
+                  <div>Add to Cart</div>
+                </button>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
+                <a href="viewBook.html" class="flex flex-col h-full w-full">
+                  <img
+                    src="./images/the-idiot.jpg"
+                    alt=""
+                    class="h-[70%] w-full"
+                  />
+                  <div class="h-[30%] flex flex-col pt-4 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="w-3/4">
+                        <div
+                          class="text-important-black-color font-lora font-bold text-md line-clamp-2"
+                        >
+                          Hero with Gold
+                        </div>
+                        <div
+                          class="text-normal-black-color font-lora font-normal text-xs"
+                        >
+                          Dougie Rogers
+                        </div>
+                      </div>
+                      <div class="text-beige-color font-roboto font-bold">
+                        $90
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  class="flex justify-center gap-x-2 w-full text-xs bg-black text-white-color items-center py-1.5 rounded-sm"
+                >
+                  <i class="fa fa-cart-shopping"></i>
+                  <div>Add to Cart</div>
+                </button>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
+                <a href="viewBook.html" class="flex flex-col h-full w-full">
+                  <img
+                    src="./images/the-book-of-disquiet.jpg"
+                    alt=""
+                    class="h-[70%] w-full"
+                  />
+                  <div class="h-[30%] flex flex-col pt-4 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="w-3/4">
+                        <div
+                          class="text-important-black-color font-lora font-bold text-md line-clamp-2"
+                        >
+                          Goddess Of Insanity
+                        </div>
+                        <div
+                          class="text-normal-black-color font-lora font-normal text-xs"
+                        >
+                          Dennis Jenkings
+                        </div>
+                      </div>
+                      <div class="text-beige-color font-roboto font-bold">
+                        $90
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  class="flex justify-center gap-x-2 w-full text-xs bg-black text-white-color items-center py-1.5 rounded-sm"
+                >
+                  <i class="fa fa-cart-shopping"></i>
+                  <div>Add to Cart</div>
+                </button>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
                 <a href="viewBook.html" class="flex flex-col h-full w-full">
                   <img src="./images/medea.jpg" alt="" class="h-[70%] w-full" />
                   <div class="h-[30%] flex flex-col pt-4 w-full">
@@ -174,7 +277,203 @@
                         <div
                           class="text-important-black-color font-lora font-bold text-md line-clamp-2"
                         >
-                          Thieves Of The Lost World of GWhateverWasMissing
+                          Thieves Of The Lost World of G...
+                        </div>
+                        <div
+                          class="text-normal-black-color font-lora font-normal text-xs"
+                        >
+                          Quinn Holland
+                        </div>
+                      </div>
+                      <div class="text-beige-color font-roboto font-bold">
+                        $90
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  class="flex justify-center gap-x-2 w-full text-xs bg-black text-white-color items-center py-1.5 rounded-sm"
+                >
+                  <i class="fa fa-cart-shopping"></i>
+                  <div>Add to Cart</div>
+                </button>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
+                <a href="viewBook.html" class="flex flex-col h-full w-full">
+                  <img
+                    src="./images/the-idiot.jpg"
+                    alt=""
+                    class="h-[70%] w-full"
+                  />
+                  <div class="h-[30%] flex flex-col pt-4 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="w-3/4">
+                        <div
+                          class="text-important-black-color font-lora font-bold text-md line-clamp-2"
+                        >
+                          Hero with Gold
+                        </div>
+                        <div
+                          class="text-normal-black-color font-lora font-normal text-xs"
+                        >
+                          Dougie Rogers
+                        </div>
+                      </div>
+                      <div class="text-beige-color font-roboto font-bold">
+                        $90
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  class="flex justify-center gap-x-2 w-full text-xs bg-black text-white-color items-center py-1.5 rounded-sm"
+                >
+                  <i class="fa fa-cart-shopping"></i>
+                  <div>Add to Cart</div>
+                </button>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
+                <a href="viewBook.html" class="flex flex-col h-full w-full">
+                  <img
+                    src="./images/the-book-of-disquiet.jpg"
+                    alt=""
+                    class="h-[70%] w-full"
+                  />
+                  <div class="h-[30%] flex flex-col pt-4 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="w-3/4">
+                        <div
+                          class="text-important-black-color font-lora font-bold text-md line-clamp-2"
+                        >
+                          Goddess Of Insanity
+                        </div>
+                        <div
+                          class="text-normal-black-color font-lora font-normal text-xs"
+                        >
+                          Dennis Jenkings
+                        </div>
+                      </div>
+                      <div class="text-beige-color font-roboto font-bold">
+                        $90
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  class="flex justify-center gap-x-2 w-full text-xs bg-black text-white-color items-center py-1.5 rounded-sm"
+                >
+                  <i class="fa fa-cart-shopping"></i>
+                  <div>Add to Cart</div>
+                </button>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
+                <a href="viewBook.html" class="flex flex-col h-full w-full">
+                  <img src="./images/medea.jpg" alt="" class="h-[70%] w-full" />
+                  <div class="h-[30%] flex flex-col pt-4 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="w-3/4">
+                        <div
+                          class="text-important-black-color font-lora font-bold text-md line-clamp-2"
+                        >
+                          Thieves Of The Lost World of G...
+                        </div>
+                        <div
+                          class="text-normal-black-color font-lora font-normal text-xs"
+                        >
+                          Quinn Holland
+                        </div>
+                      </div>
+                      <div class="text-beige-color font-roboto font-bold">
+                        $90
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  class="flex justify-center gap-x-2 w-full text-xs bg-black text-white-color items-center py-1.5 rounded-sm"
+                >
+                  <i class="fa fa-cart-shopping"></i>
+                  <div>Add to Cart</div>
+                </button>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
+                <a href="viewBook.html" class="flex flex-col h-full w-full">
+                  <img
+                    src="./images/the-idiot.jpg"
+                    alt=""
+                    class="h-[70%] w-full"
+                  />
+                  <div class="h-[30%] flex flex-col pt-4 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="w-3/4">
+                        <div
+                          class="text-important-black-color font-lora font-bold text-md line-clamp-2"
+                        >
+                          Hero with Gold
+                        </div>
+                        <div
+                          class="text-normal-black-color font-lora font-normal text-xs"
+                        >
+                          Dougie Rogers
+                        </div>
+                      </div>
+                      <div class="text-beige-color font-roboto font-bold">
+                        $90
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  class="flex justify-center gap-x-2 w-full text-xs bg-black text-white-color items-center py-1.5 rounded-sm"
+                >
+                  <i class="fa fa-cart-shopping"></i>
+                  <div>Add to Cart</div>
+                </button>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
+                <a href="viewBook.html" class="flex flex-col h-full w-full">
+                  <img
+                    src="./images/the-book-of-disquiet.jpg"
+                    alt=""
+                    class="h-[70%] w-full"
+                  />
+                  <div class="h-[30%] flex flex-col pt-4 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="w-3/4">
+                        <div
+                          class="text-important-black-color font-lora font-bold text-md line-clamp-2"
+                        >
+                          Goddess Of Insanity
+                        </div>
+                        <div
+                          class="text-normal-black-color font-lora font-normal text-xs"
+                        >
+                          Dennis Jenkings
+                        </div>
+                      </div>
+                      <div class="text-beige-color font-roboto font-bold">
+                        $90
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  class="flex justify-center gap-x-2 w-full text-xs bg-black text-white-color items-center py-1.5 rounded-sm"
+                >
+                  <i class="fa fa-cart-shopping"></i>
+                  <div>Add to Cart</div>
+                </button>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
+                <a href="viewBook.html" class="flex flex-col h-full w-full">
+                  <img src="./images/medea.jpg" alt="" class="h-[70%] w-full" />
+                  <div class="h-[30%] flex flex-col pt-4 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="w-3/4">
+                        <div
+                          class="text-important-black-color font-lora font-bold text-md line-clamp-2"
+                        >
+                          Thieves Of The Lost World of G...
                         </div>
                         <div
                           class="text-normal-black-color font-lora font-normal text-xs"

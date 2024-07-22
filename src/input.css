@@ -5,3 +5,22 @@
 .full-page {
   height: calc(100vh - 152px);
 }
+
+.navbar {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+
+.book-container {
+  height: 504px;
+  width: 232px;
+}
+
+.carrousel-description {
+  font-size: clamp(10px, 2.5vw, 46px);
+}

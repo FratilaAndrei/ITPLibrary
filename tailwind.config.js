@@ -17,6 +17,9 @@ module.exports = {
         lora: ["Lora"],
         roboto: ["Roboto"],
       },
+      screens: {
+        xs: "425px",
+      },
     },
   },
   plugins: [],
