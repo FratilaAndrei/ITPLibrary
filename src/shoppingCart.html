@@ -23,15 +23,22 @@
   </head>
 
   <body class="h-screen flex flex-col justify-between">
-    <nav class="bg-white-color navbar text-important-black-color">
+    <nav
+      class="bg-white-color navbar fullHd:mx-auto fullHd:pt-4 fullHd:px-10 text-important-black-color"
+    >
       <ul class="flex justify-between items-center w-full">
-        <ul class="text-xl font-medium font-lora flex gap-x-2 items-center">
+        <ul
+          class="text-xl fullHd:text-[28px] font-medium font-lora flex gap-x-2 items-center"
+        >
           <img src="images/logo.png" alt="" class="" />
           <li>ITP Library</li>
         </ul>
         <ul class="gap-x-10 uppercase font-medium font-roboto hidden sm:flex">
           <li>
-            <a href="index.html" class="flex items-center gap-2 text-[12px]">
+            <a
+              href="index.html"
+              class="flex items-center gap-2 text-[12px] fullHd:text-[16px]"
+            >
               <i class="fa-solid fa-house"></i>
               <span>Home</span>
             </a>
@@ -39,7 +46,7 @@
           <li>
             <a
               href="shoppingCart.html"
-              class="flex items-center gap-2 text-[12px]"
+              class="flex items-center gap-2 text-[12px] fullHd:text-[16px]"
             >
               <i class="fa-solid fa-cart-shopping"></i>
               <span>Shopping Cart</span>
@@ -48,7 +55,7 @@
           <li>
             <a
               href="./Orders/orderList.html"
-              class="flex items-center gap-2 text-[12px]"
+              class="flex items-center gap-2 text-[12px] fullHd:text-[16px]"
             >
               <i class="fa-solid fa-truck-fast"></i>
               <span>Orders</span>
@@ -57,7 +64,7 @@
           <li>
             <a
               href="./Login/login.html"
-              class="flex items-center gap-2 text-[12px]"
+              class="flex items-center gap-2 text-[12px] fullHd:text-[16px]"
             >
               <i class="fa-solid fa-user"></i>
               <span>Login</span>
@@ -77,12 +84,12 @@
     </nav>
     <div class=""></div>
 
-    <section class="container mx-auto h-4/5 p-4">
+    <section class="container mx-auto fullHd:w-[75%] fullHd:px-10 h-4/5 p-4">
       <div class="flex flex-col h-full gap-y-8 justify-between">
         <div
-          class="text-2xl font-lora font-bold from-important-black-color m-auto md:m-0"
+          class="text-2xl fullHd:text-[38px] font-lora font-semibold from-important-black-color m-auto md:m-0"
         >
-          Your Products
+          Your products
         </div>
         <div
           class="w-full flex flex-wrap gap-y-6 max-h-fit overflow-y-scroll px-4"
@@ -93,34 +100,40 @@
             <div
               class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div class="md:w-24 md:h-24 h-32 w-36">
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
                   src="./images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
               </div>
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center fullHd:gap-y-2">
                 <div
-                  class="font-lora font-semibold text-2xl text-important-black-color"
+                  class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
                 >
                   Hero with Gold
                 </div>
                 <div class="flex gap-x-2 items-center text-lg">
-                  <span class="text-normal-black-color font-roboto">by</span>
-                  <span class="text-important-black-color font-bold font-lora"
+                  <span
+                    class="text-normal-black-color font-roboto font-normal fullHd:text-[20px]"
+                    >by</span
+                  >
+                  <span
+                    class="text-important-black-color font-bold font-roboto fullHd:text-[24px]"
                     >Dougie Rogers</span
                   >
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-center sm:items-end">
-              <div class="text-beige-color font-roboto font-bold text-xl">
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
+              <div
+                class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
+              >
                 $90
               </div>
               <div class="flex gap-x-2 items-center text-sm">
                 <i class="fa-regular fa-trash-can"></i>
-                <span>Remove</span>
+                <span class="font-roboto fullHd:text-[20px]">Remove</span>
               </div>
             </div>
           </div>
@@ -130,34 +143,40 @@
             <div
               class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div class="md:w-24 md:h-24 h-32 w-36">
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
                   src="./images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
               </div>
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center fullHd:gap-y-2">
                 <div
-                  class="font-lora font-semibold text-2xl text-important-black-color"
+                  class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
                 >
                   Hero with Gold
                 </div>
                 <div class="flex gap-x-2 items-center text-lg">
-                  <span class="text-normal-black-color font-roboto">by</span>
-                  <span class="text-important-black-color font-bold font-lora"
+                  <span
+                    class="text-normal-black-color font-roboto font-normal fullHd:text-[20px]"
+                    >by</span
+                  >
+                  <span
+                    class="text-important-black-color font-bold font-roboto fullHd:text-[24px]"
                     >Dougie Rogers</span
                   >
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-center sm:items-end">
-              <div class="text-beige-color font-roboto font-bold text-xl">
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
+              <div
+                class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
+              >
                 $90
               </div>
               <div class="flex gap-x-2 items-center text-sm">
                 <i class="fa-regular fa-trash-can"></i>
-                <span>Remove</span>
+                <span class="font-roboto fullHd:text-[20px]">Remove</span>
               </div>
             </div>
           </div>
@@ -167,34 +186,40 @@
             <div
               class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div class="md:w-24 md:h-24 h-32 w-36">
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
                   src="./images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
               </div>
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center fullHd:gap-y-2">
                 <div
-                  class="font-lora font-semibold text-2xl text-important-black-color"
+                  class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
                 >
                   Hero with Gold
                 </div>
                 <div class="flex gap-x-2 items-center text-lg">
-                  <span class="text-normal-black-color font-roboto">by</span>
-                  <span class="text-important-black-color font-bold font-lora"
+                  <span
+                    class="text-normal-black-color font-roboto font-normal fullHd:text-[20px]"
+                    >by</span
+                  >
+                  <span
+                    class="text-important-black-color font-bold font-roboto fullHd:text-[24px]"
                     >Dougie Rogers</span
                   >
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-center sm:items-end">
-              <div class="text-beige-color font-roboto font-bold text-xl">
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
+              <div
+                class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
+              >
                 $90
               </div>
               <div class="flex gap-x-2 items-center text-sm">
                 <i class="fa-regular fa-trash-can"></i>
-                <span>Remove</span>
+                <span class="font-roboto fullHd:text-[20px]">Remove</span>
               </div>
             </div>
           </div>
@@ -204,34 +229,40 @@
             <div
               class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div class="md:w-24 md:h-24 h-32 w-36">
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
                   src="./images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
               </div>
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center fullHd:gap-y-2">
                 <div
-                  class="font-lora font-semibold text-2xl text-important-black-color"
+                  class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
                 >
                   Hero with Gold
                 </div>
                 <div class="flex gap-x-2 items-center text-lg">
-                  <span class="text-normal-black-color font-roboto">by</span>
-                  <span class="text-important-black-color font-bold font-lora"
+                  <span
+                    class="text-normal-black-color font-roboto font-normal fullHd:text-[20px]"
+                    >by</span
+                  >
+                  <span
+                    class="text-important-black-color font-bold font-roboto fullHd:text-[24px]"
                     >Dougie Rogers</span
                   >
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-center sm:items-end">
-              <div class="text-beige-color font-roboto font-bold text-xl">
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
+              <div
+                class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
+              >
                 $90
               </div>
               <div class="flex gap-x-2 items-center text-sm">
                 <i class="fa-regular fa-trash-can"></i>
-                <span>Remove</span>
+                <span class="font-roboto fullHd:text-[20px]">Remove</span>
               </div>
             </div>
           </div>
@@ -241,123 +272,56 @@
             <div
               class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div class="md:w-24 md:h-24 h-32 w-36">
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
                   src="./images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
               </div>
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center fullHd:gap-y-2">
                 <div
-                  class="font-lora font-semibold text-2xl text-important-black-color"
+                  class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
                 >
                   Hero with Gold
                 </div>
                 <div class="flex gap-x-2 items-center text-lg">
-                  <span class="text-normal-black-color font-roboto">by</span>
-                  <span class="text-important-black-color font-bold font-lora"
+                  <span
+                    class="text-normal-black-color font-roboto font-normal fullHd:text-[20px]"
+                    >by</span
+                  >
+                  <span
+                    class="text-important-black-color font-bold font-roboto fullHd:text-[24px]"
                     >Dougie Rogers</span
                   >
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-center sm:items-end">
-              <div class="text-beige-color font-roboto font-bold text-xl">
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
+              <div
+                class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
+              >
                 $90
               </div>
               <div class="flex gap-x-2 items-center text-sm">
                 <i class="fa-regular fa-trash-can"></i>
-                <span>Remove</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
-          >
-            <div
-              class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
-            >
-              <div class="md:w-24 md:h-24 h-32 w-36">
-                <img
-                  src="./images/the-idiot.jpg"
-                  alt="image-order"
-                  class="w-full h-full object-cover rounded-md md:rounded-none"
-                />
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="font-lora font-semibold text-2xl text-important-black-color"
-                >
-                  Hero with Gold
-                </div>
-                <div class="flex gap-x-2 items-center text-lg">
-                  <span class="text-normal-black-color font-roboto">by</span>
-                  <span class="text-important-black-color font-bold font-lora"
-                    >Dougie Rogers</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col items-center sm:items-end">
-              <div class="text-beige-color font-roboto font-bold text-xl">
-                $90
-              </div>
-              <div class="flex gap-x-2 items-center text-sm">
-                <i class="fa-regular fa-trash-can"></i>
-                <span>Remove</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
-          >
-            <div
-              class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
-            >
-              <div class="md:w-24 md:h-24 h-32 w-36">
-                <img
-                  src="./images/the-idiot.jpg"
-                  alt="image-order"
-                  class="w-full h-full object-cover rounded-md md:rounded-none"
-                />
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="font-lora font-semibold text-2xl text-important-black-color"
-                >
-                  Hero with Gold
-                </div>
-                <div class="flex gap-x-2 items-center text-lg">
-                  <span class="text-normal-black-color font-roboto">by</span>
-                  <span class="text-important-black-color font-bold font-lora"
-                    >Dougie Rogers</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col items-center sm:items-end">
-              <div class="text-beige-color font-roboto font-bold text-xl">
-                $90
-              </div>
-              <div class="flex gap-x-2 items-center text-sm">
-                <i class="fa-regular fa-trash-can"></i>
-                <span>Remove</span>
+                <span class="font-roboto fullHd:text-[20px]">Remove</span>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="flex flex-col justify-between gap-y-6 md:gap-y-2 px-4 md:px-0"
+          class="flex flex-col justify-between gap-y-6 fullHd:gap-y-12 md:gap-y-2 px-4 md:px-0"
         >
           <div class="flex justify-between">
             <div
-              class="font-semibold font-lora text-xl text-important-black-color"
+              class="font-semibold font-lora text-xl fullHd:text-[30px] text-important-black-color"
             >
               Total:
             </div>
-
-            <div class="text-beige-color font-roboto font-bold text-xl">
+            <div
+              class="text-beige-color font-roboto font-bold text-xl fullHd:text-[30px]"
+            >
               $90
             </div>
           </div>
@@ -366,14 +330,14 @@
           >
             <a href="index.html">
               <button
-                class="border-2 py-1.5 px-10 text-center rounded-md text-xs"
+                class="border-[1px] border-black py-1.5 px-10 text-center fullHd:py-3 fullHd:px-14 rounded-sm text-xs font-lora font-normal fullHd:text-[14px]"
               >
                 Continue Shopping
               </button>
             </a>
             <a href="./Orders/orderDetails.html">
               <button
-                class="text-center bg-black border-2 border-black rounded-md text-xs text-white px-10 py-1.5"
+                class="bg-black text-white py-1.5 px-10 text-center fullHd:py-3 fullHd:px-20 rounded-[4px] text-xs font-lora font-normal fullHd:text-[14px]"
               >
                 Place Order
               </button>
@@ -383,11 +347,19 @@
       </div>
     </section>
 
-    <footer class="h-14 bg-footer-color text-xs px-4">
-      <div class="container m-auto flex items-center justify-between h-full">
+    <footer class="h-14 bg-footer-color fullHd:h-[70px] text-xs px-4">
+      <div
+        class="container m-auto fullHd:w-[90%] fullHd:px-8 flex items-center justify-between h-full"
+      >
         <div class="flex gap-x-2 items-center">
-          <div>@Copyright</div>
-          <div class="text-normal-black-color font-roboto font-bold underline">
+          <div
+            class="font-roboto font-normal text-normal-black-color fullHd:text-[14px]"
+          >
+            @Copyright
+          </div>
+          <div
+            class="text-normal-black-color fullHd:text-[14px] font-roboto font-bold underline"
+          >
             IT Perspectives
           </div>
         </div>
