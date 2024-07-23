@@ -21,9 +21,9 @@
     ></script>
   </head>
 
-  <body class="h-screen flex flex-col justify-between">
+  <body class="md:h-screen flex flex-col justify-between">
     <nav
-      class="navbar text-important-black-color lg:container lg:mx-auto lg:right-1/2 lg:translate-x-1/2"
+      class="navbar text-important-black-color bg-white-color lg:container lg:mx-auto lg:right-1/2 lg:translate-x-1/2"
     >
       <ul class="flex justify-between items-center w-full">
         <ul class="text-xl font-bold font-lora flex gap-x-2 items-center">
@@ -77,71 +77,85 @@
     </nav>
     <div class=""></div>
 
-    <section class="container mx-auto">
-      <div class="h-full flex flex-wrap justify-center lg:gap-x-20">
+    <section class="container mx-auto xl:px-20 pt-20">
+      <div
+        class="h-full flex flex-wrap justify-center xl:justify-evenly fullHd:justify-center lg:gap-x-20"
+      >
         <div class="mb-4 md:mb-0">
           <img
             src="../images/auth.png"
             alt=""
-            class="h-full w-[70%] md:w-[90%] object-cover mx-auto"
+            class="h-full xl:h-[90%] w-[70%] md:w-[90%] xl:w-full object-cover mx-auto"
           />
         </div>
         <form
-          class="flex flex-col items-start md:justify-between w-2/3 md:w-1/2 pt-4 gap-y-4 lg:w-2/5 xl:w-1/2"
+          class="flex flex-col items-start md:justify-between w-2/3 fullHd:w-[30%] md:w-1/2 pt-4 sm:pt-0 gap-y-4 lg:w-2/5 xl:w-1/2 xl:gap-y-8"
         >
           <div class="flex flex-col gap-y-2">
             <div
-              class="text-important-black-color font-lora font-semibold text-3xl"
+              class="text-important-black-color font-lora font-bold text-4xl"
             >
               Log In
             </div>
-            <div class="text-normal-black-color text-sm font-semibold">
+            <div
+              class="text-normal-black-color font-roboto text-md font-normal"
+            >
               Use a local account to log in.
             </div>
           </div>
           <div class="flex flex-col gap-y-6 w-full">
             <div class="flex flex-col gap-y-2 text-sm md:w-2/3">
-              <div>Email</div>
+              <div class="font-roboto font-bold text-normal-black-color">
+                Email
+              </div>
               <input
                 type="email"
                 placeholder="Email"
                 required
-                class="w-full pl-2 border-[1px] border-gray-200 rounded-[4px] outline-none py-1"
+                class="w-full pl-2 border-[1px] fullHd:w-2/3 text-gray-color font-roboto font-normal border-gray-200 rounded-[4px] outline-none py-1"
               />
             </div>
             <div class="flex flex-col gap-y-2 text-sm md:w-2/3">
-              <div>Password</div>
+              <div class="font-roboto font-bold text-normal-black-color">
+                Password
+              </div>
               <input
                 type="password"
                 placeholder="Password"
                 required
-                class="w-full pl-2 border-[1px] border-gray-200 rounded-[4px] outline-none py-1"
+                class="w-full pl-2 border-[1px] fullHd:w-2/3 text-gray-color font-roboto font-normal border-gray-200 rounded-[4px] outline-none py-1"
               />
             </div>
             <div class="flex gap-x-2">
               <input type="checkbox" />
-              <span>Remember me?</span>
+              <span class="font-roboto font-normal text-xs text-gray-color"
+                >Remember me?</span
+              >
             </div>
           </div>
           <button
-            class="bg-black text-white w-1/3 rounded-sm py-1.5 text-xs font-lora font-normal cursor-pointer"
+            class="bg-black text-white w-1/3 xl:w-[30%] fullHd:w-[20%] rounded-[3px] text xs xl:text-[10px] py-1.5 font-lora font-normal cursor-pointer mt-8"
           >
             Log In
           </button>
           <div
-            class="flex flex-col gap-y-2 text-sm underline cursor-pointer font-bold text-important-black-color font-lora"
+            class="flex flex-col gap-y-2 xl:gap-y-6 text-sm underline cursor-pointer font-normal text-important-black-color font-roboto"
           >
-            <a>Forgot your password?</a>
+            <a class="text-important-black-color font-roboto font-normal"
+              >Forgot your password?</a
+            >
             <a href="register.html">Register as a new user</a>
           </div>
         </form>
       </div>
     </section>
 
-    <footer class="h-14 bg-footer-color text-xs px-4">
+    <footer class="h-14 mt-6 md:mt-0 bg-footer-color text-xs px-4">
       <div class="container m-auto flex items-center justify-between h-full">
         <div class="flex gap-x-2 items-center">
-          <div>@Copyright</div>
+          <div class="text-normal-black-color font-roboto font-normal">
+            @Copyright
+          </div>
           <div class="text-normal-black-color font-roboto font-bold underline">
             IT Perspectives
           </div>
