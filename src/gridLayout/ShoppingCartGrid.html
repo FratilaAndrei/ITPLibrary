@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ITP Library</title>
-    <link href="./output.css" rel="stylesheet" />
-    <link href="./input.css" rel="stylesheet" />
+    <link href="../output.css" rel="stylesheet" />
+    <link href="../input.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,16 +24,18 @@
 
   <body class="h-screen flex flex-col justify-between">
     <nav
-      class="bg-white-color navbar fullHd:mx-auto fullHd:w-[90%] xl:px-20 fullHd:pt-4 fullHd:px-10 text-important-black-color"
+      class="bg-white-color navbarGrid fullHd:mx-auto fullHd:pt-4 fullHd:px-10 text-important-black-color"
     >
-      <ul class="flex justify-between items-center w-full">
+      <ul class="grid grid-flow-col-dense grid-rows-1 w-full">
         <ul
-          class="text-xl fullHd:text-[28px] font-medium font-lora flex gap-x-2 items-center"
+          class="text-xl fullHd:text-[28px] font-medium font-lora col-span-full content-center"
         >
           <img src="images/logo.png" alt="" class="" />
           <li>ITP Library</li>
         </ul>
-        <ul class="gap-x-10 uppercase font-medium font-roboto hidden sm:flex">
+        <ul
+          class="gap-x-2 uppercase font-medium font-roboto hidden sm:grid grid-cols-4 justify-self-end content-center place-items-center"
+        >
           <li>
             <a
               href="index.html"
@@ -84,31 +86,23 @@
     </nav>
     <div class=""></div>
 
-    <section
-      class="container mx-auto xl:w-[70%] fullHd:w-[75%] fullHd:px-10 h-4/5 p-4"
-    >
-      <div
-        class="flex flex-col h-full gap-y-8 justify-between fullHd:p-0 py-10"
-      >
+    <section class="container mx-auto fullHd:w-[75%] fullHd:px-10 h-4/5 p-4">
+      <div class="grid grid-cols-1 h-full space-y-8">
         <div
-          class="text-2xl xl:text-[28px] fullHd:text-[38px] font-lora font-semibold from-important-black-color m-auto md:m-0"
+          class="text-2xl fullHd:text-[38px grid] font-lora font-semibold from-important-black-color m-auto md:m-0"
         >
           Your products
         </div>
-        <div
-          class="w-full flex flex-wrap gap-y-6 max-h-fit overflow-y-scroll px-4 md:px-0"
-        >
+        <div class="w-full space-y-6 max-h-fit overflow-y-scroll px-4">
           <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
+            class="w-full grid grid-cols-2 border-b-2 pb-6 gap-y-2 md:gap-y-0"
           >
             <div
-              class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
+              class="flex gap-x-8 flex-wrap justify-start md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
-                  src="./images/the-idiot.jpg"
+                  src="../images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
@@ -144,16 +138,14 @@
             </div>
           </div>
           <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
+            class="w-full grid grid-cols-2 border-b-2 pb-6 gap-y-2 md:gap-y-0"
           >
             <div
-              class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
+              class="flex gap-x-8 flex-wrap justify-start md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
-                  src="./images/the-idiot.jpg"
+                  src="../images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
@@ -189,16 +181,14 @@
             </div>
           </div>
           <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
+            class="w-full grid grid-cols-2 border-b-2 pb-6 gap-y-2 md:gap-y-0"
           >
             <div
-              class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
+              class="flex gap-x-8 flex-wrap justify-start md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
-                  src="./images/the-idiot.jpg"
+                  src="../images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
@@ -234,16 +224,14 @@
             </div>
           </div>
           <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
+            class="w-full grid grid-cols-2 border-b-2 pb-6 gap-y-2 md:gap-y-0"
           >
             <div
-              class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
+              class="flex gap-x-8 flex-wrap justify-start md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
-                  src="./images/the-idiot.jpg"
+                  src="../images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
@@ -279,16 +267,14 @@
             </div>
           </div>
           <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
+            class="w-full grid grid-cols-2 border-b-2 pb-6 gap-y-2 md:gap-y-0"
           >
             <div
-              class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
+              class="flex gap-x-8 flex-wrap justify-start md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
+              <div class="md:w-24 md:h-24 h-32 w-36 fullHd:h-[130px]">
                 <img
-                  src="./images/the-idiot.jpg"
+                  src="../images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
@@ -327,9 +313,9 @@
         <div
           class="flex flex-col justify-between gap-y-6 fullHd:gap-y-12 md:gap-y-2 px-4 md:px-0"
         >
-          <div class="flex justify-between xl:mb-6 fullHd:mb-0">
+          <div class="flex justify-between">
             <div
-              class="font-semibold font-lora text-xl xl:text-[22px] fullHd:text-[30px] text-important-black-color"
+              class="font-semibold font-lora text-xl fullHd:text-[30px] text-important-black-color"
             >
               Total:
             </div>
@@ -351,7 +337,7 @@
             </a>
             <a href="./Orders/orderDetails.html">
               <button
-                class="bg-black text-white py-1.5 px-10 text-center fullHd:py-3 xl:px-14 fullHd:px-20 rounded-[4px] text-xs font-lora font-normal fullHd:text-[14px]"
+                class="bg-black text-white py-1.5 px-10 text-center fullHd:py-3 fullHd:px-20 rounded-[4px] text-xs font-lora font-normal fullHd:text-[14px]"
               >
                 Place Order
               </button>
@@ -361,9 +347,7 @@
       </div>
     </section>
 
-    <footer
-      class="h-14 bg-footer-color fullHd:h-[70px] text-xs px-4 fullHd:px-2"
-    >
+    <footer class="h-14 bg-footer-color fullHd:h-[70px] text-xs px-4">
       <div
         class="container m-auto fullHd:w-[90%] fullHd:px-8 flex items-center justify-between h-full"
       >

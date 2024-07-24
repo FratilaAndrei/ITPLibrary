@@ -12,9 +12,15 @@
   align-items: center;
   /* position: fixed; */
   z-index: 50;
-  width: 90%;
   /* margin: auto; */
   /* padding: 0 20px 0 20px; */
+}
+
+.navbarGrid {
+  height: 56px;
+  display: grid;
+  z-index: 50;
+  width: 90%;
 }
 
 .book-container {
