@@ -12,6 +12,7 @@ module.exports = {
         "logo-color": "#272727",
         "normal-black-color": "#262626",
         "important-black-color": "#000000",
+        "border-color": "#E9E9E9",
       },
       fontFamily: {
         lora: ["Lora"],
