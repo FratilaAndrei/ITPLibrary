@@ -21,7 +21,7 @@
     ></script>
   </head>
 
-  <body class="h-screen flex flex-col justify-between">
+  <body class="md:h-screen flex flex-col justify-between">
     <nav
       class="bg-white-color navbar fullHd:mx-auto fullHd:w-[90%] md:px-6 xl:px-20 fullHd:pt-4 fullHd:px-10 text-important-black-color"
     >
@@ -29,13 +29,13 @@
         <ul
           class="text-xl fullHd:text-[28px] font-medium font-lora flex gap-x-2 items-center"
         >
-          <img src="../images/logo.png" alt="" class="" />
+          <img src="images/logo.png" alt="" class="" />
           <li>ITP Library</li>
         </ul>
         <ul class="gap-x-10 uppercase font-medium font-roboto hidden sm:flex">
           <li>
             <a
-              href="../index.html"
+              href="index.html"
               class="flex items-center gap-2 text-[12px] fullHd:text-[16px]"
             >
               <i class="fa-solid fa-house"></i>
@@ -44,7 +44,7 @@
           </li>
           <li>
             <a
-              href="../shoppingCart.html"
+              href="shoppingCart.html"
               class="flex items-center gap-2 text-[12px] fullHd:text-[16px]"
             >
               <i class="fa-solid fa-cart-shopping"></i>
@@ -53,7 +53,7 @@
           </li>
           <li>
             <a
-              href="../Orders/orderList.html"
+              href="./Orders/orderList.html"
               class="flex items-center gap-2 text-[12px] fullHd:text-[16px]"
             >
               <i class="fa-solid fa-truck-fast"></i>
@@ -62,7 +62,7 @@
           </li>
           <li>
             <a
-              href="login.html"
+              href="./Login/login.html"
               class="flex items-center gap-2 text-[12px] fullHd:text-[16px]"
             >
               <i class="fa-solid fa-user"></i>
@@ -82,46 +82,72 @@
       </div>
     </nav>
 
-    <section class="flex items-center container m-auto w-3/4">
-      <div class="flex">
-        <div class="w-2/5 h-96">
-          <img src="./images/medea.jpg" alt="" class="h-full w-2/3" />
+    <section
+      class="flex items-center container m-auto xs:w-4/5 md:w-full lg:w-3/4"
+    >
+      <div class="md:flex md:px-8 lg:px-0 fullHd:p-0 fullHd:h-[90%]">
+        <div
+          class="p-8 md:p-0 w-full xl:w-2/5 md:w-3/5 ultraQ:flex ultraQ:justify-center lg:h-96 fullHd:ml-8 fullHd:h-full"
+        >
+          <img
+            src="./images/medea.jpg"
+            alt=""
+            class="h-full w-full md:w-4/5 lg:w-2/3 fullHd:w-[65%] ultraQ:w-1/2"
+          />
         </div>
-        <div class="w-3/5">
-          <div class="flex gap-y-8 flex-col h-full">
+        <div class="px-8 md:p-0 fullHd:h-full md:w-3/5 xl:w-1/2 fullHd:pr-20">
+          <div
+            class="flex gap-y-8 flex-col h-full ultraQ:px-20 fullHd:gap-y-12"
+          >
             <div class="flex flex-col gap-y-4">
               <div class="flex justify-between">
                 <div
-                  class="text-important-black-color font-bold font-lora text-3xl"
+                  class="text-important-black-color font-bold font-lora text-3xl xl:text-4xl fullHd:text-[48px]"
                 >
                   Hero With Gold
                 </div>
-                <div class="font-lora font-bold text-3xl text-beige-color">
+                <div
+                  class="font-roboto font-bold text-3xl fullHd:text-[38px] text-beige-color"
+                >
                   $90
                 </div>
               </div>
-              <div class="flex gap-x-2">
-                <span>by</span>
-                <span class="text-important-black-color font-lora font-bold"
+              <div class="flex items-center gap-x-2">
+                <span
+                  class="fullHd:text-[20px] font-roboto font-normal text-normal-black-color"
+                  >by</span
+                >
+                <span
+                  class="text-important-black-color font-lora font-bold xl:text-lg fullHd:text-[24px]"
                   >Dougie Rogers</span
                 >
               </div>
             </div>
-            <div>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-              consequuntur quia itaque ab perspiciatis totam cupiditate quam
-              provident aspernatur alias ipsa deserunt eum magnam quisquam
-              inventore eveniet, dolore, vitae officia. Fuga ab similique minima
-              aliquam perferendis consequatur ducimus culpa rem? Necessitatibus,
-              similique architecto! Minus, laboriosam consectetur? Illo et
-              debitis magnam!
-            </div>
-            <button
-              class="flex items-center justify-center bg-black rounded-md text-white w-1/4 py-1 gap-x-2"
+            <div
+              class="text-normal-black-color font-roboto font-normal xl:text-sm fullHd:text-base"
             >
-              <i class="fa fa-shopping-cart"></i>
-              <span>Add to cart</span>
-            </button>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. In
+              vitae turpis massa sed elementum tempus. Pellentesque adipiscing
+              commodo elit at imperdiet dui accumsan sit amet. Ridiculus mus
+              mauris vitae ultricies. Aenean et tortor at risus. Massa tincidunt
+              nunc pulvinar sapien et. Dignissim suspendisse in est ante.
+              Ultricies mi quis hendrerit dolor magna eget est. Id aliquet
+              lectus proin nibh nisl. Porttitor eget dolor morbi non arcu.
+              Iaculis at erat pellentesque adipiscing. Lectus arcu bibendum at
+              varius vel. Nibh praesent tristique magna sit amet purus gravida.
+              Sed euismod nisi porta lorem mollis aliquam ut.
+            </div>
+            <a href="Orders/orderList.html">
+              <button
+                class="flex items-center justify-center bg-black rounded-[4px] text-white mb-6 md:mb-0 xl:px-8 md:w-1/2 xl:w-2/5 fullHd:w-[32%] xl:py-1.5 fullHd:py-2.5 py-1 gap-x-2"
+              >
+                <i class="fa fa-shopping-cart"></i>
+                <span class="font-lora font-normal xl:text-sm fullHd:text-sm"
+                  >Add to cart</span
+                >
+              </button>
+            </a>
           </div>
         </div>
       </div>
