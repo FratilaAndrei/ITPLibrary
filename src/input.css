@@ -29,5 +29,9 @@
 }
 
 .carrousel-description {
-  font-size: clamp(10px, 2.5vw, 46px);
+  font-size: clamp(20px, 64px, 3vw);
+}
+
+.carrousel-description-secondary {
+  font-size: clamp(10px, 20px, 20px);
 }
