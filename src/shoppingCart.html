@@ -82,38 +82,35 @@
         <a href="./Login/login.html">Login</a>
       </div>
     </nav>
-    <div class=""></div>
 
     <section
-      class="container mx-auto xl:w-[70%] fullHd:w-[75%] fullHd:px-10 h-4/5 p-4"
+      class="container mx-auto xl:w-[70%] fullHd:w-[75%] fullHd:px-10 h-[80%] fullHd:h-[65%] p-4"
     >
       <div
-        class="flex flex-col h-full gap-y-8 justify-between fullHd:p-0 py-10"
+        class="flex flex-col h-full gap-y-8 justify-between fullHd:p-0 md:py-10"
       >
         <div
-          class="text-2xl xl:text-[28px] fullHd:text-[38px] font-lora font-semibold from-important-black-color m-auto md:m-0"
+          class="text-2xl xl:text-[28px] fullHd:text-[38px] md:pl-6 lg:pl-0 font-lora font-semibold from-important-black-color m-auto md:m-0"
         >
           Your products
         </div>
         <div
-          class="w-full flex flex-wrap gap-y-6 max-h-fit overflow-y-scroll px-4 md:px-0"
+          class="w-full divide-y-2 divide-border-color fullHd:divide-y-[1px] md:w-full flex flex-wrap gap-y-6 max-h-fit overflow-y-scroll px-4 md:px-6 lg:px-0 md:-mx-0 fullHd:pr-8 fullHd:-mr-20"
         >
           <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
+            class="w-full flex justify-center sm:justify-between pb-6 fullHd:pb-0 shopping-cart-item-container flex-wrap gap-y-2 md:gap-y-0"
           >
             <div
               class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
+              <div class="shopping-cart-item-image">
                 <img
                   src="./images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
               </div>
-              <div class="flex flex-col items-center fullHd:gap-y-2">
+              <div class="shopping-cart-item-description">
                 <div
                   class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
                 >
@@ -131,7 +128,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-4">
               <div
                 class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
               >
@@ -144,21 +141,19 @@
             </div>
           </div>
           <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
+            class="w-full flex justify-center sm:justify-between shopping-cart-item-container flex-wrap gap-y-2 md:gap-y-0"
           >
             <div
               class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
+              <div class="shopping-cart-item-image">
                 <img
                   src="./images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
               </div>
-              <div class="flex flex-col items-center fullHd:gap-y-2">
+              <div class="shopping-cart-item-description">
                 <div
                   class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
                 >
@@ -176,7 +171,52 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-4">
+              <div
+                class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
+              >
+                $90
+              </div>
+              <div class="flex gap-x-2 items-center text-sm">
+                <i class="fa-regular fa-trash-can"></i>
+                <span class="font-roboto font-normal fullHd:text-[20px]"
+                  >Remove</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-center sm:justify-between shopping-cart-item-container flex-wrap gap-y-2 md:gap-y-0"
+          >
+            <div
+              class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
+            >
+              <div class="shopping-cart-item-image">
+                <img
+                  src="./images/the-idiot.jpg"
+                  alt="image-order"
+                  class="w-full h-full object-cover rounded-md md:rounded-none"
+                />
+              </div>
+              <div class="shopping-cart-item-description">
+                <div
+                  class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
+                >
+                  Hero with Gold
+                </div>
+                <div class="flex gap-x-2 items-center text-lg">
+                  <span
+                    class="text-normal-black-color font-roboto font-normal fullHd:text-[20px]"
+                    >by</span
+                  >
+                  <span
+                    class="text-important-black-color font-bold font-roboto fullHd:text-[24px]"
+                    >Dougie Rogers</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-4">
               <div
                 class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
               >
@@ -189,21 +229,19 @@
             </div>
           </div>
           <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
+            class="w-full flex justify-center sm:justify-between shopping-cart-item-container flex-wrap gap-y-2 md:gap-y-0"
           >
             <div
               class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
+              <div class="shopping-cart-item-image">
                 <img
                   src="./images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
               </div>
-              <div class="flex flex-col items-center fullHd:gap-y-2">
+              <div class="shopping-cart-item-description">
                 <div
                   class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
                 >
@@ -221,7 +259,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-4">
               <div
                 class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
               >
@@ -234,21 +272,19 @@
             </div>
           </div>
           <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
+            class="w-full flex justify-center sm:justify-between shopping-cart-item-container flex-wrap gap-y-2 md:gap-y-0"
           >
             <div
               class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
             >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
+              <div class="shopping-cart-item-image">
                 <img
                   src="./images/the-idiot.jpg"
                   alt="image-order"
                   class="w-full h-full object-cover rounded-md md:rounded-none"
                 />
               </div>
-              <div class="flex flex-col items-center fullHd:gap-y-2">
+              <div class="shopping-cart-item-description">
                 <div
                   class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
                 >
@@ -266,52 +302,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
-              <div
-                class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
-              >
-                $90
-              </div>
-              <div class="flex gap-x-2 items-center text-sm">
-                <i class="fa-regular fa-trash-can"></i>
-                <span class="font-roboto fullHd:text-[20px]">Remove</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-full flex justify-center sm:justify-between border-b-2 pb-6 flex-wrap gap-y-2 md:gap-y-0"
-          >
-            <div
-              class="flex gap-x-8 flex-wrap justify-center md:flex-nowrap gap-y-4 md:gap-y-0"
-            >
-              <div
-                class="md:w-24 md:h-24 h-32 w-32 xl:w-16 fullHd:w-20 fullHd:h-[120px]"
-              >
-                <img
-                  src="./images/the-idiot.jpg"
-                  alt="image-order"
-                  class="w-full h-full object-cover rounded-md md:rounded-none"
-                />
-              </div>
-              <div class="flex flex-col items-center fullHd:gap-y-2">
-                <div
-                  class="font-lora font-bold fullHd:text-[30px] text-2xl text-important-black-color"
-                >
-                  Hero with Gold
-                </div>
-                <div class="flex gap-x-2 items-center text-lg">
-                  <span
-                    class="text-normal-black-color font-roboto font-normal fullHd:text-[20px]"
-                    >by</span
-                  >
-                  <span
-                    class="text-important-black-color font-bold font-roboto fullHd:text-[24px]"
-                    >Dougie Rogers</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-2">
+            <div class="flex flex-col items-center sm:items-end fullHd:gap-y-4">
               <div
                 class="text-beige-color font-roboto font-bold fullHd:text-[30px] text-xl"
               >
@@ -325,7 +316,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col justify-between gap-y-6 fullHd:gap-y-12 md:gap-y-2 px-4 md:px-0"
+          class="flex flex-col justify-between gap-y-6 fullHd:gap-y-12 md:gap-y-2 px-4 md:px-6 lg:px-0 fullHd:pr-8"
         >
           <div class="flex justify-between xl:mb-6 fullHd:mb-0">
             <div
@@ -351,7 +342,7 @@
             </a>
             <a href="./Orders/orderDetails.html">
               <button
-                class="bg-black text-white py-1.5 px-10 text-center fullHd:py-3 xl:px-14 fullHd:px-20 rounded-[4px] text-xs font-lora font-normal fullHd:text-[14px]"
+                class="bg-black border min-w-[189px] border-black text-white py-1.5 px-10 text-center fullHd:py-3 xl:px-14 fullHd:px-20 rounded-[4px] text-xs font-lora font-normal fullHd:text-[14px]"
               >
                 Place Order
               </button>
@@ -379,13 +370,6 @@
             IT Perspectives
           </div>
         </div>
-        <a href="#">
-          <button
-            class="p-1 px-1.5 fullHd:py-2 fullHd:px-2.5 fullHd:text-[15px] rounded-md bg-black"
-          >
-            <i class="fa-solid fa-chevron-up text-white"></i>
-          </button>
-        </a>
       </div>
     </footer>
   </body>

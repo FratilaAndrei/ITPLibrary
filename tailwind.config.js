@@ -15,6 +15,8 @@ module.exports = {
         "border-color": "#E9E9E9",
         "order-input": "#9F9F9F",
         "modal-color": "#00000080",
+        "modal-background": "#00000080",
+        "modal-button-border": "#D9D9D9",
       },
       fontFamily: {
         lora: ["Lora"],
