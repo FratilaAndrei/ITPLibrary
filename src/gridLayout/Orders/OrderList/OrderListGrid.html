@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6e70eb99cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="OrderList.css" />
+    <title>ITP Library</title>
+  </head>
+  <body>
+    <div></div>
+    <nav class="navbar-container">
+      <ul class="navbar-header">
+        <img src="../../../images/logo.png" alt="" class="navbar-img" />
+        <li class="navbar-title">ITP Library</li>
+      </ul>
+      <ul class="navbar-links">
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="../../ShoppingCart/ShoppingCartGrid.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Shopping Cart</span>
+          </a>
+        </li>
+        <li>
+          <a href="./Orders/orderList.html">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Orders</span>
+          </a>
+        </li>
+        <li>
+          <a href="./Login/login.html">
+            <i class="fa-solid fa-user"></i>
+            <span>Login</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mobile-sidebar">
+        <a href="index.html">Home</a>
+        <a href="shoppingCart.html">Shopping Cart</a>
+        <a href="./Orders/orderList.html">Orders</a>
+        <a href="./Login/login.html">Login</a>
+      </div>
+    </nav>
+
+    <section class="order-section-container">
+      <div class="order-section-title">Your products</div>
+      <div class="orders-container">
+        <div class="order-wrapper">
+          <img src="../../../images/orderBook.png" alt="" class="order-img" />
+          <div class="order-details">
+            <div class="order-item-id">Order #78234</div>
+            <div class="order-items">
+              <span class="order-label">Items: </span>
+              <span class="order-count">2</span>
+            </div>
+            <div class="order-status-container">
+              <span class="order-status-label">Delivery Status: </span>
+              <span class="order-status">In Progress</span>
+            </div>
+          </div>
+          <div class="order-checkout">
+            <div class="order-price">$90</div>
+            <div class="order-edit">
+              <i class="fa-solid fa-pencil order-edit-icon"></i>
+              <span class="order-edit-label">Edit Order Details</span>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="order-wrapper">
+          <img src="../../../images/orderBook.png" alt="" class="order-img" />
+          <div class="order-details">
+            <div class="order-item-id">Order #78234</div>
+            <div class="order-items">
+              <span class="order-label">Items: </span>
+              <span class="order-count">2</span>
+            </div>
+            <div class="order-status-container">
+              <span class="order-status-label">Delivery Status: </span>
+              <span class="order-status">Completed</span>
+            </div>
+          </div>
+          <div class="order-checkout">
+            <div class="order-price">$90</div>
+            <div class="order-edit edit-2">
+              <i class="fa-solid fa-pencil order-edit-icon"></i>
+              <span class="order-edit-label">Edit Order Details</span>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer-wrapper">
+        <div class="copy-container">
+          <span class="copy">@Copyright</span
+          ><span class="brand">IT Perspectives</span>
+        </div>
+        <div class="footer-icon">s</div>
+      </div>
+    </footer>
+  </body>
+</html>
