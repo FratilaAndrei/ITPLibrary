@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6e70eb99cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="OrderList.css" />
+    <link rel="stylesheet" href="OrderDetails.css" />
+    <title>ITP Library</title>
+  </head>
+
+  <body>
+    <nav class="navbar-container">
+      <ul class="navbar-header">
+        <img src="../../../images/logo.png" alt="" class="navbar-img" />
+        <li class="navbar-title">ITP Library</li>
+      </ul>
+      <ul class="navbar-links">
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="../../ShoppingCart/ShoppingCartGrid.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Shopping Cart</span>
+          </a>
+        </li>
+        <li>
+          <a href="OrderListGrid.html">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Orders</span>
+          </a>
+        </li>
+        <li>
+          <a href="../../Login/LoginGrid.html">
+            <i class="fa-solid fa-user"></i>
+            <span>Login</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mobile-sidebar">
+        <a href="index.html">Home</a>
+        <a href="../../ShoppingCart/ShoppingCartGrid.html">Shopping Cart</a>
+        <a href="OrderListGrid.html">Orders</a>
+        <a href="../../Login/LoginGrid.html">Login</a>
+      </div>
+    </nav>
+    <div></div>
+
+    <section class="order-details-container">
+      <div class="order-details-img-wrapper">
+        <img
+          src="../../../images/order.png"
+          alt="order-pic"
+          class="order-details-img"
+        />
+        <div class="order-details-img-background"></div>
+      </div>
+      <aside class="order-details-form">
+        <div class="order-details-header">Order Details</div>
+        <div class="order-details-section">
+          <div class="order-details-title">Contact Details</div>
+          <div class="order-details-name-input">
+            <input
+              class="order-input-box"
+              type="text"
+              placeholder="First Name"
+            />
+            <input
+              class="order-input-box"
+              type="text"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="order-details-section">
+          <div class="order-details-title">Billing Adress</div>
+          <select class="order-input-box" name="Country Selection" id="">
+            <option value="" selected>Select Country</option>
+            <option value="">USA</option>
+            <option value="">Canada</option>
+            <option value="">UK</option>
+          </select>
+          <input class="order-input-box" type="text" placeholder="Address" />
+          <input
+            class="order-input-box"
+            type="text"
+            placeholder="Phone Number"
+          />
+          <div class="order-grid-col">
+            <input type="checkbox" />
+            <div>Use address for delivery</div>
+          </div>
+        </div>
+        <div class="order-details-section">
+          <div class="order-details-title">Delivery Address</div>
+          <select class="order-input-box" name="Country Selection" id="">
+            <option value="" selected>Select Country</option>
+            <option value="">USA</option>
+            <option value="">Canada</option>
+            <option value="">UK</option>
+          </select>
+          <input class="order-input-box" type="text" placeholder="Address" />
+          <input
+            class="order-input-box"
+            type="text"
+            placeholder="Phone Number"
+          />
+        </div>
+        <div class="order-details-section">
+          <div class="order-details-title">Payment</div>
+          <div class="order-grid-col">
+            <div class="radio-container">
+              <input class="radio" type="radio" name="" id="" />
+              <div class="radio-label">Online</div>
+            </div>
+            <div class="radio-container">
+              <input class="radio" type="radio" name="" id="" />
+              <div class="radio-label">Cash</div>
+            </div>
+          </div>
+        </div>
+        <div class="order-details-section">
+          <div class="order-details-title">Delivery Adress</div>
+          <input
+            class="order-input-box"
+            type="date"
+            placeholder="Delivery Date"
+          />
+        </div>
+        <div class="order-details-section">
+          <div class="order-details-title">Observations</div>
+          <textarea
+            class="order-input-box"
+            placeholder="Observations"
+          ></textarea>
+        </div>
+        <div class="order-details-section">
+          <div class="order-details-title">Would you recommand us?</div>
+          <div class="order-grid-col">
+            <input type="checkbox" />
+            <div>Would you recommand us?</div>
+          </div>
+        </div>
+        <div class="order-details-section">
+          <div class="order-buttons">
+            <a href="../HomePage/HomePageGrid.html ">
+              <button class="cancel-order-btn">Continue Shopping</button>
+            </a>
+            <a href="../Orders/OrderList/OrderDetailsGrid.html">
+              <button class="update-order-btn">Place Order</button>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer-wrapper">
+        <div class="copy-container">
+          <span class="copy">@Copyright</span
+          ><span class="brand">IT Perspectives</span>
+        </div>
+        <div class="footer-icon"></div>
+      </div>
+    </footer>
+  </body>
+</html>
