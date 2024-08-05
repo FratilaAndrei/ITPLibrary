@@ -164,3 +164,10 @@
     column-gap: 20px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    display: grid;
+    grid-template-rows: 54px 1fr auto;
+  }
+}
