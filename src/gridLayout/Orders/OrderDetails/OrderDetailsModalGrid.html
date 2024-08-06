@@ -17,8 +17,8 @@
       src="https://kit.fontawesome.com/6e70eb99cd.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="OrderList.css" />
-    <link rel="stylesheet" href="OrderDetails.css" />
+    <link rel="stylesheet" href="../OrderList/OrderList.css" />
+    <link rel="stylesheet" href="../OrderList/OrderDetails.css" />
     <title>ITP Library</title>
   </head>
 
@@ -167,13 +167,40 @@
           </div>
         </div>
       </aside>
+      <div class="modal-container">
+        <div class="modal-wrapper">
+          <div class="modal-header">
+            <span>
+              <i class="fa-solid fa-circle-exclamation exclamation-icon"></i>
+            </span>
+            <span class="">
+              <div class="confirmation-text">Confirmation</div>
+              <div class="confirmation-description">
+                Confirmation order details changes?
+              </div>
+            </span>
+          </div>
+          <div class="modal-confirmation">
+            <span class="">
+              <a href="orderList.html">
+                <button class="cancel-button">Cancel</button>
+              </a>
+            </span>
+            <span>
+              <a href="orderList.html">
+                <button class="confirm-button">Confirm</button>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer-container">
       <div class="footer-wrapper">
         <div class="copy-container">
-          <span class="copy">@Copyright</span
-          ><span class="brand">IT Perspectives</span>
+          <span class="copy">@Copyright</span>
+          <span class="brand">IT Perspectives</span>
         </div>
         <div class="footer-icon"></div>
       </div>
