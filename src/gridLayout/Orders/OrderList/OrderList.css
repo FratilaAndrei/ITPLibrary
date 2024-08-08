@@ -350,7 +350,8 @@ body {
 
   .shopping-body {
     display: grid;
-    grid-template-rows: auto 60% 10% 15%;
+    row-gap: 20px;
+    grid-template-rows: 10% 1fr 15% 5%;
   }
 
   .order-wrapper {
@@ -447,7 +448,7 @@ body {
 @media screen and (min-width: 1440px) {
   .shopping-body {
     display: grid;
-    grid-template-rows: auto 50% 15% 15%;
+    grid-template-rows: 10% 1fr auto auto;
   }
 
   .navbar-container {
@@ -541,7 +542,7 @@ body {
 @media screen and (min-width: 1920px) {
   .shopping-body {
     display: grid;
-    grid-template-rows: auto 45% 15% 20%;
+    /* grid-template-rows: auto auto auto 5%; */
   }
 
   .navbar-container {
@@ -633,5 +634,10 @@ body {
 
   .footer-container {
     height: 70px;
+  }
+
+  #shopping-section {
+    overflow-y: scroll;
+    max-height: 700px;
   }
 }

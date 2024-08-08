@@ -141,6 +141,13 @@
   margin: 20px 0;
 }
 
+.under-carrousel-section
+  > .under-carrousel-cards-container
+  .under-carrousel-card:last-child
+  > .divider2 {
+  display: none;
+}
+
 .under-carrousel-card-button {
   display: grid;
   grid-template-columns: auto auto;
@@ -352,15 +359,18 @@
   .under-carrousel-card-description-container {
     grid-template-rows: none;
     grid-template-columns: auto auto;
+    height: 80px;
   }
 
   .under-carrousel-card-price {
     justify-self: end;
   }
 
+  .under-carrousel-img {
+    height: 350px;
+  }
+
   .under-carrousel-card-button {
     width: 100%;
   }
 }
-
-/* Under Carrousel Card  -> remove centering  */
