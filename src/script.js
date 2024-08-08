@@ -93,7 +93,7 @@ const DUMMY_BOOKS_DATA = [
     id: 11,
     image:
       "https://images.unsplash.com/photo-1569008593571-a98b326533a3?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Curse of the Forgotten",
+    title: "Curse of the Dead",
     author: "Mira Ravenwood",
     price: 80,
     isBestBook: false,
@@ -198,7 +198,7 @@ const localStorageShoppingCart = JSON.parse(
   localStorage.getItem("shoppingItems")
 );
 
-const shoppingItems =
+let shoppingItems =
   localStorage.getItem("shoppingItems") !== null
     ? localStorageShoppingCart
     : [];
@@ -220,14 +220,20 @@ function createShoppingItem(item) {
   detailsDiv.className = "order-details";
 
   const itemId = document.createElement("div");
-  itemId.className = "order-item-id";
+  itemId.className = "shopping-item-id";
   itemId.textContent = item.title;
 
   const itemsDiv = document.createElement("div");
-  itemsDiv.className = "order-items";
-  itemsDiv.textContent = item.author;
+  // itemsDiv.className = "order-items";
+  itemsDiv.className = "shopping-items";
+  itemsDiv.textContent = "by";
+
+  const byDiv = document.createElement("div");
+  byDiv.className = "shopping-label";
+  byDiv.textContent = item.author;
 
   detailsDiv.appendChild(itemId);
+  itemsDiv.appendChild(byDiv);
   detailsDiv.appendChild(itemsDiv);
 
   const checkoutDiv = document.createElement("div");
@@ -238,7 +244,7 @@ function createShoppingItem(item) {
   price.textContent = `$${item.price}`;
 
   const editDiv = document.createElement("div");
-  editDiv.className = "order-edit";
+  editDiv.className = "shopping-edit";
 
   const editIcon = document.createElement("i");
   editIcon.className = "fa-solid fa-trash-can order-edit-icon";
@@ -257,6 +263,10 @@ function createShoppingItem(item) {
   itemDiv.appendChild(img);
   itemDiv.appendChild(detailsDiv);
   itemDiv.appendChild(checkoutDiv);
+
+  const divider = document.createElement("div");
+  divider.className = "shopping-divider";
+  itemDiv.appendChild(divider);
 
   return itemDiv;
 }
@@ -280,13 +290,19 @@ document.querySelectorAll(".under-carrousel-card-button").forEach((button) => {
     shoppingItems.push(getMyBook(bookId));
     updateLocalStorage();
 
+    shoppingItems.forEach((item2) => {
+      if (item2.id === bookId) {
+        console.log("Nu ar trebui adaugat");
+      }
+    });
+
     console.log(getMyBook(bookId));
 
     console.log(shoppingItems);
   });
 });
 
-document.querySelectorAll(".order-edit").forEach((editLabel) => {
+document.querySelectorAll(".order-edit-label").forEach((editLabel) => {
   editLabel.addEventListener("click", (event) => {
     const editId = event.currentTarget.dataset.editId;
     function deleteItem(editId) {
@@ -301,3 +317,19 @@ document.querySelectorAll(".order-edit").forEach((editLabel) => {
     console.log(shoppingItems);
   });
 });
+
+const getTotalPrice = shoppingItems.reduce((total, item) => {
+  return total + item.price;
+}, 0);
+
+document.querySelector(
+  ".shopping-cart-total-price.order-price"
+).textContent = `$${getTotalPrice}`;
+
+function emptyShoppingCart() {
+  shoppingItems = [];
+  updateLocalStorage();
+  window.location.reload();
+}
+
+setInterval(emptyShoppingCart, 60000);
