@@ -1,0 +1,366 @@
+:root {
+  --carrousel-color: #f3f1ee;
+  --gray-color: #595959;
+  --footer-color: #d5d4d0;
+  --beige-color: #b69454;
+  --white-color: #ffffff;
+  --logo-color: #272727;
+  --normal-black-color: #262626;
+  --important-black-color: #000000;
+  --border-color: #e9e9e9;
+  --order-input: #9f9f9f;
+  --modal-color: #00000080;
+  --modal-background: #00000080;
+  --modal-button-border: #d9d9d9;
+}
+
+.homepage-body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.carrousel-wrapper {
+  display: grid;
+  grid-template-rows: auto auto;
+  padding-top: 20px;
+  height: 400px;
+  background-color: var(--carrousel-color);
+}
+
+.carrousel-container {
+  margin: 0 10px;
+  height: 100%;
+}
+
+.carrousel-img-container {
+  height: 100%;
+}
+
+.carrousel-img {
+  height: 100%;
+  width: 100%;
+}
+.carrousel-description-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  padding: 0 10px;
+  row-gap: 10px;
+}
+
+.carrousel-title {
+  font-family: Lora;
+  font-weight: bold;
+  color: var(--important-black-color);
+  font-size: 26px;
+}
+
+.carrousel-description {
+  font-family: Roboto;
+  font-weight: normal;
+  color: var(--normal-black-color);
+  font-size: 20px;
+}
+
+.under-carrousel-container {
+  height: fit-content;
+  width: 100%;
+  margin-top: -15px;
+  display: grid;
+  /* grid-template-rows: auto auto; */
+  background-color: white;
+}
+
+.under-carrousel-section {
+  display: grid;
+  padding: 20px;
+  row-gap: 30px;
+}
+
+.under-carrousel-title {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 20px;
+  color: #262626;
+}
+
+.under-carrousel-cards-container {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  justify-content: center;
+  place-content: center;
+}
+
+.under-carrousel-info {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 100%;
+}
+
+.under-carrousel-card-description-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+  padding: 20px 0;
+  row-gap: 20px;
+}
+.under-carrousel-card {
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+}
+
+.under-carrousel-card-title {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 24px;
+  color: #262626;
+}
+
+.under-carrousel-card-author {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 18px;
+  color: #262626;
+}
+
+.under-carrousel-card-price {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--beige-color);
+}
+
+.under-carrousel-img {
+  height: 300px;
+  width: 225px;
+}
+
+.divider2 {
+  border: 1px solid var(--border-color);
+  margin: 20px 0;
+}
+
+.under-carrousel-card-button {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  place-content: center;
+  padding: 10px 0;
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .home-nav {
+    height: 56px;
+  }
+
+  .carrousel-description-container {
+    grid-template-rows: auto auto;
+    place-content: center;
+    padding: 0;
+  }
+
+  .carrousel-container {
+    padding: 0;
+  }
+
+  .carrousel-wrapper {
+    height: 300px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    padding: 20px;
+  }
+
+  .carrousel-img-container {
+    height: 100%;
+    display: grid;
+    align-items: center;
+  }
+
+  .carrousel-img {
+    height: 60%;
+  }
+
+  .under-carrousel-container {
+    margin: -50px auto 0 auto;
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .under-carrousel-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+
+  .under-carrousel-img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .under-carrousel-section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .under-carrousel-card-button {
+    place-self: center;
+    width: 100%;
+  }
+
+  .under-carrousel-card-title {
+    font-size: 20px;
+  }
+
+  .under-carrousel-card-description-container {
+    padding: 10px 0;
+    row-gap: 10px;
+  }
+
+  .divider2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carrousel-wrapper {
+    width: 100%;
+    margin: auto;
+    height: 400px;
+  }
+
+  .carrousel-img {
+    justify-self: center;
+    height: 70%;
+    width: 80%;
+  }
+  .under-carrousel-container {
+    margin: -70px auto 0 auto;
+  }
+
+  .under-carrousel-cards-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home-nav {
+    height: 56px;
+  }
+
+  .carrousel-title {
+    font-size: 44px;
+    text-wrap: wrap;
+    width: 61%;
+  }
+  .carrousel-description {
+    font-size: 18px;
+    text-wrap: wrap;
+    width: 82%;
+  }
+
+  .carrousel-description-container {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .carrousel-img {
+    height: 80%;
+  }
+
+  .under-carrousel-cards-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .under-carrousel-card-button {
+    width: 225px;
+    place-self: center;
+  }
+
+  .carrousel-wrapper {
+    width: 95%;
+    margin: auto;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .carrousel-wrapper {
+    grid-template-columns: 42% auto;
+    height: 750px;
+  }
+
+  .home-nav {
+    height: 72px;
+  }
+  .carrousel-title {
+    font-size: 64px;
+    text-wrap: wrap;
+    width: 90%;
+  }
+
+  .carrousel-description {
+    font-size: 20px;
+    text-wrap: wrap;
+    width: 95%;
+  }
+
+  .carrousel-description-container {
+    width: 78%;
+  }
+
+  .carrousel-img-container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .carrousel-img {
+    height: 80%;
+    width: 100%;
+  }
+
+  .under-carrousel-container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 85%;
+    margin: -120px auto 0 auto;
+    padding: 25px 40px;
+  }
+
+  .under-carrousel-section {
+    margin: 0 auto;
+    width: 100%;
+    row-gap: 60px;
+  }
+
+  .under-carrousel-cards-container {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 40px;
+  }
+
+  .under-carrousel-card-description {
+    text-align: start;
+  }
+
+  .under-carrousel-card-description-container {
+    grid-template-rows: none;
+    grid-template-columns: auto auto;
+  }
+
+  .under-carrousel-card-price {
+    justify-self: end;
+  }
+
+  .under-carrousel-card-button {
+    width: 100%;
+  }
+}
+
+/* Under Carrousel Card  -> remove centering  */
