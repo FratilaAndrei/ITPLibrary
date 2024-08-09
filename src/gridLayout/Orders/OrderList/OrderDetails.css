@@ -19,6 +19,10 @@
 }
    */
 
+button {
+  cursor: pointer;
+}
+
 body {
   display: grid;
   grid-template-rows: 54px 1fr auto;

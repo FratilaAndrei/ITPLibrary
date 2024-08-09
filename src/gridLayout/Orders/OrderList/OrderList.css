@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+button {
+  cursor: pointer;
+}
+
 :root {
   --carrousel-color: #f3f1ee;
   --gray-color: #595959;
@@ -133,6 +138,10 @@
 
 .order-items {
   padding-top: 6px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .order-label {
@@ -159,6 +168,7 @@
 .order-status-container {
   display: grid;
   place-items: center;
+  align-items: center;
 }
 
 .order-status-label {
@@ -206,8 +216,16 @@
   font-weight: 500;
 }
 
+.order-quantity {
+  color: var(--important-black-color);
+  font-weight: bold;
+}
+
 .order-edit {
   padding-top: 10px;
+  color: black;
+  font-family: Roboto;
+  font-weight: normal;
 }
 
 .shopping-edit {
@@ -338,6 +356,16 @@ body {
   font-size: 22px;
 }
 
+.order-checkout {
+  color: var(--beige-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.order-edit-icon {
+  color: var(--gray-color);
+}
+
 @media screen and (min-width: 640px) {
   .mobile-sidebar {
     display: none;
@@ -411,12 +439,24 @@ body {
     place-items: start;
   }
   .order-status-container {
-    display: block;
-    place-items: start;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 20px;
   }
   .order-checkout {
     text-align: end;
+    color: var(--beige-color);
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;
   }
+
+  .order-checkout #text {
+    font-size: 20px;
+  }
+
   .order-section-container {
     margin: 0 auto;
     width: 85%;
@@ -470,6 +510,10 @@ body {
   .shopping-divider {
     display: none;
   }
+
+  .order-checkout {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -482,6 +526,10 @@ body {
 
   .shopping-cart-total {
     margin-bottom: 20px;
+  }
+
+  .order-checkout {
+    font-size: 20px;
   }
 }
 
@@ -693,5 +741,9 @@ body {
   #shopping-section {
     overflow-y: scroll;
     max-height: 700px;
+  }
+
+  .order-items {
+    font-size: 24px;
   }
 }

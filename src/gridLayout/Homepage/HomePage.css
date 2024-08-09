@@ -14,6 +14,10 @@
   --modal-button-border: #d9d9d9;
 }
 
+button {
+  cursor: pointer;
+}
+
 .homepage-body {
   display: grid;
   grid-template-rows: auto 1fr auto;

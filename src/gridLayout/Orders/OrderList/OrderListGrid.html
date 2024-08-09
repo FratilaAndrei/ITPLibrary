@@ -64,55 +64,7 @@
 
     <section class="order-section-container">
       <div class="order-section-title">Your products</div>
-      <div class="orders-container">
-        <div class="order-wrapper">
-          <img src="../../../images/orderBook.png" alt="" class="order-img" />
-          <div class="order-details">
-            <div class="order-item-id">Order #78234</div>
-            <div class="order-items">
-              <span class="order-label">Items: </span>
-              <span class="order-count">2</span>
-            </div>
-            <div class="order-status-container">
-              <span class="order-status-label">Delivery Status: </span>
-              <span class="order-status">In Progress</span>
-            </div>
-          </div>
-          <div class="order-checkout">
-            <div class="order-price">$90</div>
-            <div class="order-edit">
-              <a href="OrderDetailsGrid.html" class="order-link">
-                <i class="fa-solid fa-pencil order-edit-icon"></i>
-                <span class="order-edit-label">Edit Order Details</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="divider"></div>
-
-        <div class="order-wrapper">
-          <img src="../../../images/orderBook.png" alt="" class="order-img" />
-          <div class="order-details">
-            <div class="order-item-id">Order #78234</div>
-            <div class="order-items">
-              <span class="order-label">Items: </span>
-              <span class="order-count">2</span>
-            </div>
-            <div class="order-status-container">
-              <span class="order-status-label">Delivery Status: </span>
-              <span class="order-status">Completed</span>
-            </div>
-          </div>
-          <div class="order-checkout">
-            <div class="order-price">$90</div>
-            <div class="order-edit edit-2">
-              <i class="fa-solid fa-pencil order-edit-icon"></i>
-              <span class="order-edit-label">Edit Order Details</span>
-            </div>
-          </div>
-        </div>
-        <div class="divider"></div>
-      </div>
+      <div class="orders-container" id="orders-container"></div>
     </section>
 
     <footer class="footer-container">
@@ -124,5 +76,7 @@
         <div class="footer-icon">s</div>
       </div>
     </footer>
+
+    <script src="/src/script.js"></script>
   </body>
 </html>

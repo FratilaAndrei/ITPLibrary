@@ -7,6 +7,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Dougie Rogers",
     price: 90,
     isBestBook: true,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Dennis Jenkins",
     price: 70,
     isBestBook: true,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Quinn Holland",
     price: 80,
     isBestBook: true,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Cole Porter",
     price: 60,
     isBestBook: true,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 5,
@@ -43,6 +51,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Elis Booth",
     price: 65,
     isBestBook: true,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 6,
@@ -52,6 +62,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Victor Miller",
     price: 75,
     isBestBook: true,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 7,
@@ -61,6 +73,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Lena Storm",
     price: 85,
     isBestBook: false,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 8,
@@ -70,6 +84,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Aric Blackwood",
     price: 78,
     isBestBook: false,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 9,
@@ -79,6 +95,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Evelyn Starling",
     price: 92,
     isBestBook: false,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 10,
@@ -88,6 +106,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Jaxon Hunter",
     price: 70,
     isBestBook: false,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 11,
@@ -97,6 +117,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Mira Ravenwood",
     price: 80,
     isBestBook: false,
+    quantity: 1,
+    status: "In Progress",
   },
   {
     id: 12,
@@ -106,6 +128,8 @@ const DUMMY_BOOKS_DATA = [
     author: "Damon Ashcroft",
     price: 88,
     isBestBook: false,
+    quantity: 1,
+    status: "In Progress",
   },
 ];
 
@@ -205,6 +229,7 @@ let shoppingItems =
 
 function updateLocalStorage() {
   localStorage.setItem("shoppingItems", JSON.stringify(shoppingItems));
+  localStorage.setItem("orders", JSON.stringify(orders));
 }
 
 function createShoppingItem(item) {
@@ -287,14 +312,20 @@ document.querySelectorAll(".under-carrousel-card-button").forEach((button) => {
       return BOOKS_DATA.find((book) => book.id === parseInt(bookId));
     }
 
-    shoppingItems.push(getMyBook(bookId));
-    updateLocalStorage();
+    const selectedBook = getMyBook(bookId);
+    const existingBook = shoppingItems.find(
+      (item) => item.id === selectedBook.id
+    );
 
-    shoppingItems.forEach((item2) => {
-      if (item2.id === bookId) {
-        console.log("Nu ar trebui adaugat");
-      }
-    });
+    if (existingBook) {
+      existingBook.quantity += 1;
+      console.log(`Increased quantity for book with ID: ${selectedBook.id}`);
+    } else {
+      shoppingItems.push(selectedBook);
+      console.log(`Added new book with ID: ${selectedBook.id}`);
+    }
+
+    updateLocalStorage();
 
     console.log(getMyBook(bookId));
 
@@ -322,9 +353,13 @@ const getTotalPrice = shoppingItems.reduce((total, item) => {
   return total + item.price;
 }, 0);
 
-document.querySelector(
+const totalPrice = document.querySelector(
   ".shopping-cart-total-price.order-price"
-).textContent = `$${getTotalPrice}`;
+);
+
+if (totalPrice) {
+  totalPrice.textContent = `$${getTotalPrice}`;
+}
 
 function emptyShoppingCart() {
   shoppingItems = [];
@@ -333,3 +368,91 @@ function emptyShoppingCart() {
 }
 
 setInterval(emptyShoppingCart, 60000);
+
+const localStorageOrders = JSON.parse(localStorage.getItem("orders"));
+
+let orders = localStorage.getItem("orders") !== null ? localStorageOrders : [];
+
+document.getElementById("place-order-btn")?.addEventListener("click", () => {
+  orders = [...shoppingItems];
+
+  updateLocalStorage();
+});
+
+function createOrderStructure(order) {
+  const orderWrapper = document.createElement("div");
+  orderWrapper.className = "order-wrapper";
+
+  const orderImg = document.createElement("img");
+  orderImg.className = "order-img";
+  orderImg.src = "../../../images/orderBook.png";
+
+  orderWrapper.appendChild(orderImg);
+
+  const orderDetails = document.createElement("div");
+  orderDetails.className = "order-details";
+
+  orderWrapper.appendChild(orderDetails);
+
+  const orderItemId = document.createElement("div");
+  orderItemId.className = "order-item-id";
+  orderItemId.textContent = "Order #" + order.id;
+
+  const orderItems = document.createElement("div");
+  orderItems.className = "order-items";
+  orderItems.textContent = "Items: ";
+
+  const orderQuantity = document.createElement("div");
+  orderQuantity.className = "order-quantity";
+  orderQuantity.textContent = order.quantity;
+
+  orderItems.appendChild(orderQuantity);
+
+  const orderStatusContainer = document.createElement("div");
+  orderStatusContainer.className = "order-status-container";
+  orderStatusContainer.textContent = "Delivery Status: ";
+
+  const orderStatus = document.createElement("div");
+  orderStatus.className = "order-status";
+  orderStatus.textContent = order.status;
+
+  orderStatusContainer.appendChild(orderStatus);
+
+  const orderCheckout = document.createElement("div");
+  orderCheckout.className = "order-checkout";
+  orderCheckout.textContent = "$" + order.price;
+
+  orderWrapper.appendChild(orderCheckout);
+
+  const orderEdit = document.createElement("div");
+  orderEdit.className = "order-edit";
+  orderEdit.textContent = "Edit Order Details";
+  orderEdit.setAttribute("data-edit-id", order.id);
+
+  orderDetails.appendChild(orderItemId);
+  orderDetails.appendChild(orderItems);
+  orderDetails.appendChild(orderStatusContainer);
+  orderCheckout.appendChild(orderEdit);
+
+  return orderWrapper;
+}
+
+const bringOrderData = orders.map((order) => {
+  return createOrderStructure(order);
+});
+
+const orderContainer = document.getElementById("orders-container");
+bringOrderData.forEach((orderWrapper) => {
+  orderContainer?.appendChild(orderWrapper);
+});
+
+function changeStatusOrder() {
+  orders = orders.map((order) => {
+    order.status = "Completed";
+    return order;
+  });
+  updateLocalStorage();
+  window.location.reload();
+}
+
+setInterval(changeStatusOrder, 60000);
